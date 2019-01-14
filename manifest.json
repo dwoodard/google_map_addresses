@@ -1,0 +1,18 @@
+{
+ "manifest_version": 2,
+"name": "Google Map Addresses",
+ "description": "this saves any changes to the results",
+ "version": "1.0",
+"content_scripts": [
+ 	{
+		"matches": ["https://www.google.com/*"],
+		"css": ["main.css"],
+		"js": ["main.js"] 
+	}
+ ],
+ 
+ "page_action": {
+ "default_popup": "popup.html",
+ "default_title": "Google Addresses"
+ }
+}
